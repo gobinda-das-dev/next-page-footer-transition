@@ -9,17 +9,23 @@
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-black to-white">
+<body class="bg-black text-white">
 
    <main>
-      <section class="h-[200vh] w-full"></section>
+      <!-- <section class="h-[200vh] w-full"></section> -->
 
 
-      <section class="next-page-footer relative h-screen w-full">
+      <section id="next-page-footer" class="relative h-screen w-full uppercase text-center flex flex-col items-center pt-[25vh]">
+         <p class="text-7xl overflow-hidden font-serif font-thin italic pt-10"><span class="next inline-block">next</span></p>
+         <p class="title text-7xl">this is so smooth</p>
+         <div class="mt-[3vh]">
+            <p class="keep-scrolling font-thin overflow-hidden leading-none">(keep scrolling)</p>
+            <div class="indicator w-full h-[2px] bg-white mt-1 scale-x-0"></div>
+         </div>
 
          
          
-         <svg class="absolute w-full bottom-0 left-0 pointer-events-none" width="100%" height="100%" viewBox="0 0 100 100"
+         <svg class="absolute w-full bottom-0 left-0 pointer-events-none mix-blend-exclusion" width="100%" height="100%" viewBox="0 0 100 100"
             preserveAspectRatio="none">
             <path class="footer__path pointer-events-auto" vector-effect="non-scaling-stroke"
                d="M 0 100 V 100 Q 50 100 100 100 V 100 z" fill="white" />
@@ -32,6 +38,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+   <script src="https://unpkg.com/split-type"></script>
    <script src="script.js"></script>
 </body>
 
